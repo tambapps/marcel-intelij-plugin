@@ -6,4 +6,7 @@ This is project is a plugin for IntelIJ, to support [Marcel](https://tambapps.gi
 For now it only supports code highlighting, and nothing else.
 
 
-I tried to implement parsing but I didn't know what the F I was doing so I stopped
+I tried to implement parsing but I didn't know what the F I was doing, so I stopped.
+
+
+This plugin is **not published** anywhere, as it lacks a lot of feature to be truly useful.
