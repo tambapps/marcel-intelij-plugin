@@ -17,6 +17,7 @@ class MarcelSyntaxHighlighter : SyntaxHighlighterBase() {
     companion object {
         val ATTRIBUTES_MAP = mapOf(
             Pair(TokenType.IDENTIFIER.name, DefaultLanguageHighlighterColors.IDENTIFIER),
+
             Pair(TokenType.TYPE_INT.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.TYPE_LONG.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.TYPE_SHORT.name, DefaultLanguageHighlighterColors.KEYWORD),
@@ -25,6 +26,7 @@ class MarcelSyntaxHighlighter : SyntaxHighlighterBase() {
             Pair(TokenType.TYPE_BOOL.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.TYPE_BYTE.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.TYPE_VOID.name, DefaultLanguageHighlighterColors.KEYWORD),
+            Pair(TokenType.TYPE_CHAR.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.FUN.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.RETURN.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.VALUE_TRUE.name, DefaultLanguageHighlighterColors.KEYWORD),
@@ -50,9 +52,14 @@ class MarcelSyntaxHighlighter : SyntaxHighlighterBase() {
             Pair(TokenType.FINAL.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.SWITCH.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.WHEN.name, DefaultLanguageHighlighterColors.KEYWORD),
+            Pair(TokenType.THIS.name, DefaultLanguageHighlighterColors.KEYWORD),
+            Pair(TokenType.SUPER.name, DefaultLanguageHighlighterColors.KEYWORD),
+            Pair(TokenType.DUMBBELL.name, DefaultLanguageHighlighterColors.KEYWORD),
+            Pair(TokenType.TRY.name, DefaultLanguageHighlighterColors.KEYWORD),
+            Pair(TokenType.CATCH.name, DefaultLanguageHighlighterColors.KEYWORD),
+            Pair(TokenType.FINALLY.name, DefaultLanguageHighlighterColors.KEYWORD),
+            Pair(TokenType.INSTANCEOF.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.WHILE.name, DefaultLanguageHighlighterColors.KEYWORD),
-            Pair(TokenType.IS.name, DefaultLanguageHighlighterColors.KEYWORD),
-            Pair(TokenType.IS_NOT.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.VISIBILITY_PUBLIC.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.VISIBILITY_PROTECTED.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.VISIBILITY_INTERNAL.name, DefaultLanguageHighlighterColors.KEYWORD),
@@ -77,6 +84,8 @@ class MarcelSyntaxHighlighter : SyntaxHighlighterBase() {
             Pair(TokenType.QUESTION_MARK.name, DefaultLanguageHighlighterColors.OPERATION_SIGN),
             Pair(TokenType.THIS.name, DefaultLanguageHighlighterColors.OPERATION_SIGN),
             Pair(TokenType.SUPER.name, DefaultLanguageHighlighterColors.OPERATION_SIGN),
+            Pair(TokenType.IS.name, DefaultLanguageHighlighterColors.OPERATION_SIGN),
+            Pair(TokenType.IS_NOT.name, DefaultLanguageHighlighterColors.OPERATION_SIGN),
 
             Pair(TokenType.LPAR.name, DefaultLanguageHighlighterColors.PARENTHESES),
             Pair(TokenType.RPAR.name, DefaultLanguageHighlighterColors.PARENTHESES),

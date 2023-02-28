@@ -10,6 +10,19 @@ class LexerElementType private constructor(private val tokenType: TokenType): IE
     return tokenType.name
   }
 
+  override fun equals(other: Any?): Boolean {
+    if (this === other) return true
+    if (other !is IElementType) return false
+
+    if (toString() != other.toString()) return false
+
+    return true
+  }
+
+  override fun hashCode(): Int {
+    return toString().hashCode()
+  }
+
 
   companion object {
 

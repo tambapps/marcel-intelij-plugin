@@ -8,7 +8,7 @@ import com.tambapps.marcel.compiler.JavaTypeResolver
 import com.tambapps.marcel.lexer.LexToken
 import com.tambapps.marcel.lexer.TokenType
 import com.tambapps.marcel.parser.MarcelParser
-import com.tambapps.marcel.parser.MarcelParsingException
+import com.tambapps.marcel.parser.MarcelParserException
 import com.tambapps.marcel.parser.ast.ModuleNode
 import com.tambapps.marcel.plugin.intelij.marcellangplugin.psi.node.PsiModuleNode
 
@@ -19,14 +19,14 @@ class MarcelPsiParser: PsiParser {
     val typeResolver = JavaTypeResolver()
     val tokenTypes = mutableListOf<LexToken>()
     while (builder.tokenType != null) {
-      tokenTypes.add(LexToken(TokenType.valueOf(builder.tokenType!!.toString()), builder.tokenText))
+      tokenTypes.add(LexToken(0, 0, 0,0, TokenType.valueOf(builder.tokenType!!.toString()), builder.tokenText))
       builder.advanceLexer()
     }
     builder.tokenType
     val parser = MarcelParser(typeResolver, tokenTypes)
     return try {
       PsiModuleNode(parser.parse())
-    } catch (e: MarcelParsingException) {
+    } catch (e: MarcelParserException) {
       PsiModuleNode(ModuleNode())
     } catch (e: UnsupportedOperationException) {
       PsiModuleNode(ModuleNode())
