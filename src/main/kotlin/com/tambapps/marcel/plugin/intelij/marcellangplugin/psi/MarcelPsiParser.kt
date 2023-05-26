@@ -8,7 +8,7 @@ import com.tambapps.marcel.compiler.JavaTypeResolver
 import com.tambapps.marcel.lexer.LexToken
 import com.tambapps.marcel.lexer.TokenType
 import com.tambapps.marcel.parser.MarcelParser
-import com.tambapps.marcel.parser.MarcelParserException
+import com.tambapps.marcel.parser.exception.MarcelParserException
 import com.tambapps.marcel.parser.ast.ModuleNode
 import com.tambapps.marcel.plugin.intelij.marcellangplugin.psi.node.PsiModuleNode
 
