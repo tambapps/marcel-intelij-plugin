@@ -18,6 +18,7 @@ class MarcelSyntaxHighlighter : SyntaxHighlighterBase() {
         val ATTRIBUTES_MAP = mapOf(
             Pair(TokenType.IDENTIFIER.name, DefaultLanguageHighlighterColors.IDENTIFIER),
 
+            // keywords
             Pair(TokenType.TYPE_INT.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.TYPE_LONG.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.TYPE_SHORT.name, DefaultLanguageHighlighterColors.KEYWORD),
@@ -60,6 +61,8 @@ class MarcelSyntaxHighlighter : SyntaxHighlighterBase() {
             Pair(TokenType.FINALLY.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.INSTANCEOF.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.WHILE.name, DefaultLanguageHighlighterColors.KEYWORD),
+            Pair(TokenType.CONSTRUCTOR.name, DefaultLanguageHighlighterColors.KEYWORD),
+            Pair(TokenType.DYNOBJ.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.VISIBILITY_PUBLIC.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.VISIBILITY_PROTECTED.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.VISIBILITY_INTERNAL.name, DefaultLanguageHighlighterColors.KEYWORD),

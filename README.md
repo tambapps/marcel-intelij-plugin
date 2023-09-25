@@ -15,5 +15,7 @@ This plugin is **not published** anywhere, as it lacks a lot of feature to be tr
 ## How to build plugin (Note to self)
 
 Run the gradle job `buildPlugin`.
-
+```shell
+./gradlew buildPlugin
+```
 the plugin should be a zip available in `build/distributions/`.

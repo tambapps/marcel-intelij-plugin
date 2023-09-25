@@ -1,7 +1,7 @@
 plugins {
   id("java")
   id("org.jetbrains.kotlin.jvm") version "1.7.20"
-  id("org.jetbrains.intellij") version "1.13.0"
+  id("org.jetbrains.intellij") version "1.15.0"
 }
 
 group = "com.tambapps.marcel.plugin.intelij"
@@ -33,7 +33,7 @@ tasks {
 
   patchPluginXml {
     sinceBuild.set("221")
-    untilBuild.set("231.*")
+    untilBuild.set("232.*")
   }
 
   signPlugin {
@@ -47,6 +47,7 @@ tasks {
   }
 }
 
+val marcelVersion = "0.0.2-SNAPSHOT"
 dependencies {
-  implementation("com.tambapps.marcel:marcel-compiler:0.1-SNAPSHOT")
+  implementation("com.tambapps.marcel:marcel-compiler:$marcelVersion")
 }
