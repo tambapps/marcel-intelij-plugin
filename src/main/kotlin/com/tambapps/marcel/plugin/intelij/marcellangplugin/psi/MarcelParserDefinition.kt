@@ -14,7 +14,7 @@ import com.tambapps.marcel.plugin.intelij.marcellangplugin.lexer.MarcelFlexLexer
 class MarcelParserDefinition: ParserDefinition {
   override fun createLexer(project: Project?) = FlexAdapter(MarcelFlexLexer())
 
-  override fun createParser(project: Project?) = MarcelPsiParser()
+  override fun createParser(project: Project?) = TODO()
 
   override fun getFileNodeType() = MarcelFileElementType.INSTANCE
 
