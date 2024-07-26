@@ -85,7 +85,7 @@ object LexerElementTypes {
   )
 
   val WHITE_SPACES = TokenSet.create(*of(
-    WHITE_SPACE
+    WHITESPACE
   ))
 
   private fun of(vararg types: TokenType): Array<LexerElementType> {

@@ -60,6 +60,7 @@ class MarcelSyntaxHighlighter : SyntaxHighlighterBase() {
             Pair(TokenType.CATCH.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.FINALLY.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.INSTANCEOF.name, DefaultLanguageHighlighterColors.KEYWORD),
+            Pair(TokenType.NOT_INSTANCEOF.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.WHILE.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.THROW.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.THROWS.name, DefaultLanguageHighlighterColors.KEYWORD),
@@ -69,6 +70,8 @@ class MarcelSyntaxHighlighter : SyntaxHighlighterBase() {
             Pair(TokenType.VISIBILITY_PROTECTED.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.VISIBILITY_INTERNAL.name, DefaultLanguageHighlighterColors.KEYWORD),
             Pair(TokenType.VISIBILITY_PRIVATE.name, DefaultLanguageHighlighterColors.KEYWORD),
+            Pair(TokenType.ASYNC.name, DefaultLanguageHighlighterColors.KEYWORD),
+            Pair(TokenType.ENUM.name, DefaultLanguageHighlighterColors.KEYWORD),
 
             // numbers
             Pair(TokenType.INTEGER.name, DefaultLanguageHighlighterColors.NUMBER),

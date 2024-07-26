@@ -1,7 +1,7 @@
 plugins {
   id("java")
-  id("org.jetbrains.kotlin.jvm") version "1.9.22"
-  id("org.jetbrains.intellij") version "1.16.1"
+  id("org.jetbrains.kotlin.jvm") version "1.9.25"
+  id("org.jetbrains.intellij") version "1.17.3"
 }
 
 group = "com.tambapps.marcel.plugin.intelij"
@@ -16,7 +16,7 @@ repositories {
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
   // list of versions https://www.jetbrains.com/idea/download/other.html
-  version.set("2023.3.2")
+  version.set("2024.1.4")
   type.set("IC") // Target IDE Platform
 
   plugins.set(listOf(/* Plugin Dependencies */))
@@ -29,7 +29,7 @@ tasks {
     targetCompatibility = "17"
   }
   withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-    kotlinOptions.jvmTarget = "11"
+    kotlinOptions.jvmTarget = "17"
   }
 
   patchPluginXml {
@@ -48,7 +48,7 @@ tasks {
   }
 }
 
-val marcelVersion = "0.1.0-SNAPSHOT"
+val marcelVersion = "1.1-SNAPSHOT"
 dependencies {
   implementation("com.tambapps.marcel:marcel-compiler:$marcelVersion")
 }
